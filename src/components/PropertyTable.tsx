@@ -31,7 +31,7 @@ const PropertyTable: React.FC = () => {
 
       try {
         const response = await fetch(
-          "http://137.184.99.151:4000/api/properties/all?status=available",
+          "https://backend.sharesbycoco.com/api/properties/all?status=available",
           {
             method: "GET",
             headers: {

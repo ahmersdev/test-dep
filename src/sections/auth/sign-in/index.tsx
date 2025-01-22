@@ -16,7 +16,7 @@ export default function SignIn() {
   const onSubmit = async (data: any) => {
     setLoading(true);
     try {
-      const res = await fetch("http://137.184.99.151:4000/api/users/login", {
+      const res = await fetch("https://backend.sharesbycoco.com/api/users/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export default function SignIn() {
 
         // Fetch profile using the token to check if the user is fully registered
         const profileRes = await fetch(
-          "http://137.184.99.151:4000/api/users/me",
+          "https://backend.sharesbycoco.com/api/users/me",
           {
             method: "GET",
             headers: {

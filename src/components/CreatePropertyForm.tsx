@@ -86,7 +86,7 @@ const CreatePropertyForm: React.FC = () => {
         return;
       }
     
-      const res = await fetch("http://137.184.99.151:4000/api/properties/add", {
+      const res = await fetch("https://backend.sharesbycoco.com/api/properties/add", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`,

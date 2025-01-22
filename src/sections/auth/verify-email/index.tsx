@@ -16,7 +16,7 @@ export default function VerifyEmail() {
   const onSubmit = async (data: any) => {
     setLoading(true);
     try {
-      const res = await fetch("http://137.184.99.151:4000/api/users/verify-email", {
+      const res = await fetch("https://backend.sharesbycoco.com/api/users/verify-email", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
